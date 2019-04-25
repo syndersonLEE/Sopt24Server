@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     //3000번 포트로 요청(request)을 보낸 메세지에서 url 부분(string으로 되어있음)을 url 객체로 파싱해줍니다 
     //url 객체에서 어떤 path로 요청이 들어왔는지도 확인해 줄 수 있습니다. 꼭 임의로라도 path 지정해서 콘솔로 찍어서 확인해보세요!
     let urlParsed = url.parse(req.url);
-    
+    console.log(urlParsed);
     //url 객체에서 query 부분(string 으로 되어있음)을 JSON 객체 형태로 파싱해줍니다. 
     let queryParsed = querystring.parse(urlParsed.query);
 

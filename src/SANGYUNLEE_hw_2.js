@@ -7,7 +7,6 @@ const json2csv = require('json2csv');
 const csv = require('csvtojson');
 const request = require('request');
 
-
 http.createServer((req, res) => {
     const urlParse = url.parse(req.url);
     const queryParse = qs.parse(urlParse.query); //파싱 데이터 저장
