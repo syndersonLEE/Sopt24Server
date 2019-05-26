@@ -55,7 +55,7 @@ http.createServer((req, res) => {
                             if (err) {
                                 console.log("파일 저장 실패");
                                 message = "파일 저장 에러";
-                                res.writeHead(500, { 'Content-Type': "application/json; charset=utf-8" });
+                                res.writeHead(500, { 'Content-Type': "text/plain; charset=utf-8" });
                                 res.write(JSON.stringify(message));
                                 res.end();
                             } else {

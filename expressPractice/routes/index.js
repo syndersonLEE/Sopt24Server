@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.use('/homework', require('./homework'));
+/* GET home page. */
+router.use('/homework', require('./api/homework/index'));
 
 module.exports = router;
